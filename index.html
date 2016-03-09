@@ -1,1 +1,104 @@
-Hello World
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Fjalla+One|Pathway+Gothic+One"/>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js"></script>
+    
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <script>
+      $(document).ready(function() {
+      $('#fullpage').fullpage({
+          navigation: true,
+          verticalCentered: false,
+          resize: false,
+          anchors: ['home','portfolio','contact'],
+          menu: '#menu'
+        });
+      });
+
+    </script>
+    <div class="container-fluid">
+      <div id="first " class="container-fluid">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+          <div id="navbar-container" class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand navbar-color" href="#">TheDevShed</a>
+            </div>
+
+            <div class="collapse navbar-collapse " id="navbar-collapse">
+              <ul class="nav navbar-nav navbar-right">
+                <li data-menuanchor="home"><a class="navbar-color" href="#home">Home<span class-"sr-only"></span></a></li>
+                <li data-menuanchor="portfolio"><a class="navbar-color" href="#portfolio">Portfolio</a></li>
+                <li class="li-last" data-menuanchor="contact"><a class="navbar-color" href="#contact">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+      </div>
+    </div>
+    <div class="container-fluid " id="fullpage">
+
+      <div class="section section-background" id="section0">
+        <div class="jumbotron jumbo-full-opacity">
+          <div class="container-fluid">
+            <div class="row color-band" id="area">
+              <h1 id="home-title">DevShed Development</h1>
+              <h3 class="subtitle" id="home-subtitle">HTML, CSS, JavaScript</h3>
+            </div>
+          </div>
+        </div>
+        <div class="ds-footer-bottom-right">
+          <div class="btn-group">
+            <a class="btn btn-link ds-icon" href="http://www.github.com"><span class="fa fa-git-square fa-3x"></span></a>
+            <a class="btn btn-link ds-icon" href="http://www.twitter.com"><span class="fa fa-twitter-square fa-3x"></span></a>
+            <a class="btn btn-link ds-icon" href="http://www.linkedin.com"><span class="fa fa-linkedin-square fa-3x"></span></a>
+          </div>
+        </div>
+      </div>
+      <div class="section section-background" id="section1">
+        <div class="row remove-padding">
+          <div class="col-xs-4 ">
+            <div class="jumbotron proj-jumbo "><h2 class="text-proj-title">Random Quote Generator</h2><br><p class="img-proj"><a class="btn btn-link ds-icon" href="http://codepen.io/nicad49/full/bEoxMm/"><span class="fa fa-quote-right fa-size"></span></a></p>
+            </div>
+
+          </div>
+          <div class="col-xs-4 ">
+            <div class="jumbotron proj-jumbo"><h2 class="text-proj-title">Javascript Calculator</h2><br><p class="img-proj"><a class="btn btn-link ds-icon" href="http://codepen.io/nicad49/full/BjwXwx/"><span class="fa fa-calculator fa-size"></span></a></p>
+            </div>
+
+          </div>
+          <div class="col-xs-4 ">
+            <div class="jumbotron proj-jumbo"><h2 class="text-proj-title">Pomodoro Timer</h2><br><p class="img-proj"><a class="btn btn-link ds-icon" href="http://codepen.io/nicad49/full/xZYWLp/"><span class="fa fa-clock-o fa-size"></span></a></p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="section section-background " id="section2">
+        <div class="jumbotron jumbo-full-opacity">
+          <div class="container-fluid">
+            <div class="row" id="area">
+              <h3 class="subtitle" id="home-subtitle">Contact Information</h3><br>
+              <h4 class="basic-text">Email: <a href="mailto:#">info@thedevshed.com</a></h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

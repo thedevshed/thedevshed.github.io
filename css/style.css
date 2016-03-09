@@ -1,0 +1,132 @@
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.navbar-fixed-top {
+  opacity: 0.8;
+}
+
+.li-last {
+  margin-right: 30px;
+}
+
+#navbar-container {
+  width: 100%;
+}
+
+.navbar-color {
+  color: #cfcfcf !important;
+}
+
+#home-title {
+  color: #263238;
+  padding-left: 20px;
+  font-size: 5vw;
+}
+
+.subtitle {
+  color: #263238;
+  font-size: 3vw;
+  padding-left: 20px;
+}
+
+.basic-text {
+  font-size: 2vw;
+  padding-left: 20px;
+}
+
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-background::after {
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -2; 
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+}
+
+#section0::after {
+  
+  background-image: url(https://images.unsplash.com/photo-1445620466293-d6316372ab59?crop=entropy&fit=crop&fm=jpg&h=1075&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925);
+  opacity: 0.7;
+  
+}
+
+#section1::after {
+/*   background-color: #2e5367; */
+  
+}
+
+#section1 {
+  display: inline;
+}
+
+#section2::after {
+  background-image: url(https://images.unsplash.com/photo-1429051883746-afd9d56fbdaf?crop=entropy&fit=crop&fm=jpg&h=1075&ixjsv=2.1.0&ixlib=rb-0.3.5&q=80&w=1925);
+  opacity: 0.5;
+  
+}
+
+.jumbo-full-opacity {
+  background: rgb(255,255,255);
+  background: rgba(255,255,255,0.7);
+  width: 100%;
+}
+
+.jumbotron {
+  border-radius: 0px !important;
+}
+
+.ds-footer-bottom-right {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding-right: 20px;
+  padding-bottom: 15px;
+}
+
+.ds-icon {
+  color: #333;
+}
+
+.ds-icon:hover {
+  color: #555;
+}
+
+.remove-padding {
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.proj-jumbo {
+  margin-top: 50px;
+  height: 100vh;
+}
+
+.text-proj-title {
+  font-size: 2vw;
+  text-align: center;
+}
+
+.img-proj {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.fa-size {
+  font-size: 13vw;
+}

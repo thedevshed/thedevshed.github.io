@@ -1,0 +1,44 @@
+#timer {
+  text-align: center;
+  font-size: x-large;
+}
+
+.reaktButton {
+  height: 100px;
+  align-content: center
+}
+
+table {
+  border-collapse: collapse;
+}
+
+#timeSummary{
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+#summaryTable table,th,td{
+ margin: 0 auto;
+ font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+ text-align: left;
+ border: solid #ddd 1px;
+ border-collapse: collapse;
+ padding: 5px 20px 5px 5px;
+}
+
+#leaderTable table,th,td{
+ margin: 0 auto;
+ font-family: Roboto, Noto, Helvetica, Arial, sans-serif;
+ text-align: left;
+ border: solid #ddd 1px;
+ border-collapse: collapse;
+ padding: 5px 20px 5px 5px;
+}
+
+
+
+
+

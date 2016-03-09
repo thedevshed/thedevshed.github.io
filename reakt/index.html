@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#2196f3">
+   
+    <title>Reakt</title>
+    <!-- Path to Framework7 Library CSS-->
+    <link rel="stylesheet" href="./css/framework7.material.css">
+    <link rel="stylesheet" href="./css/framework7.material.colors.css">
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="./css/ReactionApp.css">
+     <!-- path to jquery library-->
+      <script type="text/javascript" src="./lib/jquery-1.11.3.js"></script>
+     
+</head>
+<body>
+  <div class="panel-overlay"></div>
+ 
+  <!-- Left Panel with Reveal effect -->
+  <div class="panel panel-left panel-cover">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="center">Reakt</div>
+      </div>
+    </div>
+    <div class="content-block">
+      <div class="list-block">
+        <ul>
+          <li>
+            <a href="#Leaderboard" class="item-link close-panel item-content">
+              <div class="item-inner">
+                <div class="item-title">Leaderboards</div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>    
+      <!-- Click on link with "close-panel" class will close panel -->
+
+    </div>
+  </div>
+  
+   <!-- Views -->
+    <div class="views">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Pages container, because we use fixed navbar and toolbar, it has additional appropriate classes-->
+        <div class="pages navbar-fixed toolbar-fixed">
+          <!-- Page, "data-page" contains page name -->
+          <div data-page="index" class="page">
+            <!-- Top Navbar. In Material theme it should be inside of the page-->
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="link open-panel icon-only">
+                    <i class="icon icon-bars"></i>
+                  </a>
+                </div>
+                <div class="center">Reakt</div>
+              </div>
+            </div>
+ 
+            <!-- Bottom Toolbar. In Material theme it should be inside of the page-->
+            <!--<div class="toolbar">-->
+            <!--  <div class="toolbar-inner">-->
+                <!-- Toolbar links -->
+               
+            <!--  </div>-->
+            <!--</div>-->
+ 
+            <!-- Scrollable page content -->
+            <div class="page-content">
+              <div class="content-block">
+                <p> Please complete survey below</p>
+              </div>
+              <div class="list-block">
+                <ul>
+                  <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-gender"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Gender</div>
+                        <div class="item-input">
+                          <select id="genderSelector">
+                            <option>Male</option>
+                            <option>Female</option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                   <li>
+                    <div class="item-content">
+                      <div class="item-media"><i class="icon icon-form-calendar"></i></div>
+                      <div class="item-inner">
+                        <div class="item-title label">Age</div>
+                        <div class="item-input">
+                          <select id="ageSelector">
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="content-block">
+                <p>This information will be used for an experiment but will be kept anonymous</p>
+              </div> 
+              <!--<p class="buttons-row">-->
+              <div class="content-block">
+               <div class="row">
+                <div class="col-33"></div>
+                <div class="col-33">
+                  <p>
+                    <a href="#" class="button button-fill color-blue confirm-ok">Start</a>
+                 </p>  
+                </div>
+                <div class="col-33"></div>
+              </div>
+              
+              </div>
+            </div>
+          </div>
+          <!-- reaction page-->
+          <div class="page cached" data-page="Reaktion">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="link back icon-only">
+                    <i class="icon icon-back"></i>
+                  </a>
+                </div>
+                <div class="center">Ready? Set. Go!</div>
+              </div>
+            </div>
+            <div class="page-content">
+              <div id="timer" class="content-block-title center">000</div>
+              <div class="content-block">
+                <p class="buttons-row">
+                  <div class="row">
+                    <div class="col-33"><a href="#" id="1" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                    <div class="col-33"><a href="#" id="2" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                    <div class="col-33"><a href="#" id="3" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                  </div>
+                </p>
+                <p class="buttons-row">
+                  <div class="row">
+                    <div class="col-33"><a href="#" id="4" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                    <div class="col-33"><a href="#" id="5" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                    <div class="col-33"><a href="#" id="6" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                  </div>
+                </p>
+                <p class="buttons-row">
+                  <div class="row">
+                    <div class="col-33"><a href="#" id="7" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                    <div class="col-33"><a href="#" id="8" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                    <div class="col-33"><a href="#" id="9" class="button button-fill color-red reaktButton" style="display:none;"></a></div> 
+                  </div>
+                </p> 
+              </div>
+
+            </div>
+          </div>
+          <!-- End of reaktion page -->
+          
+          <!-- Start of leaderboard page-->
+          <div class="page cached" data-page="Leaderboard">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="left">
+                  <a href="#" class="link back icon-only">
+                    <i class="icon icon-back"></i>
+                  </a>
+                </div>
+                <div class="center">Leaderboard</div>
+              </div>
+            </div>
+            
+            <div class="page-content">
+              <div class="content-block">
+                <table id="leaderTable">
+                  <tr>
+                    <th>ID</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th>Max</th>
+                    <th>Min</th>
+                    <th>Avg</th>
+                  </tr>
+                  <tbody id="leaderValues"></tbody>
+                </table>
+                <p><a href="#" id="export" class="button">Export</a></p>
+              </div>    
+            
+            </div>
+          </div>
+          <!-- End of leaderboard page-->
+        </div>
+      </div>
+    </div>
+  
+    <!-- beginning Summary Popup -->
+    <div class="popup popup-summary">
+      <div id="timeSummary">
+        <div class="content-block-title">Time Summary</div>
+        <div class="content-block">
+          <p id="yourId"></p>
+          <table id="summaryTable">
+            <tr>
+              <th>Attempt</th>
+              <th>Time(ms)</th>
+            </tr>
+            <tbody id="summaryValues"></tbody>
+          </table>
+          <p><a href="#" class="close-popup button">Close</a></p>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+    <!-- End of summary popup-->
+  <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="./lib/framework7.js"></script>
+    <!-- path to Reakt js-->
+    <script type="text/javascript" src="./js/ReactionApp.js"></script>
+</body>
+</html>
